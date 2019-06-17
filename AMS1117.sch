@@ -108,12 +108,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C0C0902
-P 3700 1500
-F 0 "#PWR?" H 3700 1350 50  0001 C CNN
-F 1 "+3V3" H 3750 1700 50  0000 C CNN
-F 2 "" H 3700 1500 50  0001 C CNN
-F 3 "" H 3700 1500 50  0001 C CNN
-	1    3700 1500
+P 3700 1400
+F 0 "#PWR?" H 3700 1250 50  0001 C CNN
+F 1 "+3V3" H 3750 1600 50  0000 C CNN
+F 2 "" H 3700 1400 50  0001 C CNN
+F 3 "" H 3700 1400 50  0001 C CNN
+	1    3700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -173,32 +173,10 @@ F 3 "" V 2250 3550 50  0001 C CNN
 	1    2250 3550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP?
-U 1 1 5C148323
-P 2250 1700
-F 0 "JP?" V 2200 1750 50  0000 L CNN
-F 1 "IN_EN" V 2250 1750 50  0000 L CNN
-F 2 "" H 2250 1700 50  0001 C CNN
-F 3 "~" H 2250 1700 50  0001 C CNN
-	1    2250 1700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2250 1550 2250 1600
+	2250 1400 2250 1500
 Wire Wire Line
 	2250 1800 2250 1950
-$Comp
-L Device:Jumper_NO_Small JP?
-U 1 1 5C148F3B
-P 3700 1700
-F 0 "JP?" V 3650 1750 50  0000 L CNN
-F 1 "OUT_EN" V 3700 1750 50  0000 L CNN
-F 2 "" H 3700 1700 50  0001 C CNN
-F 3 "~" H 3700 1700 50  0001 C CNN
-	1    3700 1700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3700 1800 3700 1950
 Wire Wire Line
@@ -241,16 +219,16 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 5C153651
-P 2250 1550
-F 0 "#PWR?" H 2250 1400 50  0001 C CNN
-F 1 "+5V" H 2300 1750 50  0000 C CNN
-F 2 "" H 2250 1550 50  0001 C CNN
-F 3 "" H 2250 1550 50  0001 C CNN
-	1    2250 1550
+P 2250 1400
+F 0 "#PWR?" H 2250 1250 50  0001 C CNN
+F 1 "+5V" H 2300 1600 50  0000 C CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "" H 2250 1400 50  0001 C CNN
+	1    2250 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 1500 3700 1600
+	3700 1400 3700 1500
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D00D601
@@ -348,4 +326,26 @@ Wire Wire Line
 	2950 3150 2950 3250
 Wire Wire Line
 	2950 3550 2950 3750
+$Comp
+L my_solder_jumper:SolderJumper_2_Open_round JP?
+U 1 1 5D072C46
+P 2250 1650
+F 0 "JP?" V 2204 1718 50  0000 L CNN
+F 1 "IN_EN" V 2295 1718 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2250 1650 50  0001 C CNN
+F 3 "~" H 2250 1650 50  0001 C CNN
+	1    2250 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L my_solder_jumper:SolderJumper_2_Open_round JP?
+U 1 1 5D077B21
+P 3700 1650
+F 0 "JP?" V 3654 1718 50  0000 L CNN
+F 1 "OUT_EN" V 3745 1718 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3700 1650 50  0001 C CNN
+F 3 "~" H 3700 1650 50  0001 C CNN
+	1    3700 1650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
